@@ -1,8 +1,6 @@
 ﻿using System;
+using ConsoleAppLab1.Model;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleAppLab1
 {
@@ -10,6 +8,17 @@ namespace ConsoleAppLab1
     {
         static void Main(string[] args)
         {
+            //Bat dau chuong trinh
+            //Console.WriteLine("\tDEMO NHAP XUAT SINH VIEN");
+            //Student student = new Student();
+            //student.Input();
+            //student.Show();
+            Console.WriteLine("\tDEMO NHAP XUAT DANH SACH SINH VIEN");
+            DanhSachSinhVien danhSachSinhVien = new DanhSachSinhVien();
+            danhSachSinhVien.Nhap();
+            danhSachSinhVien.Xuat();
+            //Stop to monitor result
+            Console.ReadLine();
         }
     }
 }
